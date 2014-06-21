@@ -40,4 +40,4 @@ meltedLabelData <- melt(mergeddata,id=c("label"))
 labelMeans <- dcast(meltedLabelData, label ~ variable, mean)
 
 # store tidy data in output file
-write.table(labelMeans, file="./tidyData.csv", sep=",", col.names=colnames(labelMeans))
+write.table(labelMeans, file="./tidyData.txt", sep=",", col.names=colnames(labelMeans))
